@@ -1,11 +1,12 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div>
-      <h2>Welcome to React App</h2>
-      <h3>Date : {new Date().toDateString()}</h3>
-    </div>
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+    </Routes>
   );
 }
 

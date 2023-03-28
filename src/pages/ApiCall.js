@@ -11,7 +11,9 @@ function Users() {
   const dispatch = useDispatch();
   const users = useSelector((state) => state.users);
 
-  React.useEffect(() => fetchUsers(), []);
+  React.useEffect(() => {
+    fetchUsers();
+  }, []);
 
   const fetchUsers = async () => {
     dispatch(getUsers());

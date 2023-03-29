@@ -6,6 +6,7 @@ import {
   getUsersFailure,
 } from "../redux/slices/api/usersSlice";
 import { get } from "../helper/apiHelper";
+import { site_text } from "../utils/languageMapper";
 
 function Users() {
   const dispatch = useDispatch();
@@ -36,24 +37,37 @@ function Users() {
 
   return (
     <div>
-      {users.loading && <p>Loading...</p>}
+      <h1>{site_text(`pages.ApiCall.title`)}</h1>
+      <h4>{site_text(`pages.ApiCall.sub_title`)}</h4>
+      {users.loading && <p>{site_text(`pages.ApiCall.loading_text`)}</p>}
       {users.error && <p>{users.error}</p>}
       <ul>
         {users.data.map((user) => (
           <li key={user.id}>
             {user.name}{" "}
-            <button onClick={() => getSingleUser(user.id)}>View</button>
+            <button onClick={() => getSingleUser(user.id)}>
+              {site_text(`pages.ApiCall.view_button`)}
+            </button>
           </li>
         ))}
       </ul>
-      <button onClick={fetchUsers}>Fetch Users</button>
+      <button onClick={fetchUsers}>
+        {site_text(`pages.ApiCall.fetch_user_button`)}
+      </button>
 
       {user && (
-        <>
-          <h1>{user?.name}</h1>
-          <h5>{user?.email}</h5>
-          <h5>{user?.phone}</h5>
-        </>
+        <center>
+          <div
+            style={{
+              border: "1px solid",
+              width: 300,
+            }}
+          >
+            <h1>{user?.name}</h1>
+            <h5>{user?.email}</h5>
+            <h5>{user?.phone}</h5>
+          </div>
+        </center>
       )}
     </div>
   );

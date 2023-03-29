@@ -22,7 +22,6 @@ function Users() {
 
     try {
       const response = await get("/users");
-      console.log(response);
       dispatch(getUsersSuccess(response));
     } catch (error) {
       dispatch(getUsersFailure(error.message));

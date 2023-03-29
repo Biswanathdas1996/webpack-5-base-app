@@ -9,4 +9,9 @@ export const mockFileMapping = [
     method: "GET",
     mockFile: "user_details_mock_of_id_1.json",
   },
+  {
+    url: "/users/2",
+    method: "GET",
+    mockFile: "user_details_mock_of_id_2.json",
+  },
 ];

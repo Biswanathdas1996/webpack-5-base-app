@@ -1,6 +1,6 @@
 import axios from "axios";
 import { BASE_URL, USE_MOCK } from "../config";
-import { mockResponse } from "../apiConfig/configureMockData";
+import { mockResponse } from "../utils/mockMapper";
 
 const api = axios.create({
   baseURL: BASE_URL,

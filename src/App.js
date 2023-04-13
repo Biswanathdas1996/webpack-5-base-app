@@ -4,6 +4,9 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Redux from "./pages/Redux";
 import ApiCall from "./pages/ApiCall";
+import { site_text } from "./utils/languageMapper";
+
+window.site_text = site_text;
 
 function App() {
   return (

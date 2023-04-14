@@ -1,0 +1,601 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xaD16Ec89835a0ADd85752F90af68949aa898d506",
+    "txHash": "0x17c77a6ace507f6ba03a58598e057aca4466f4c98fcb538e2a7fa4415b527656",
+    "deployTransaction": {
+      "hash": "0x17c77a6ace507f6ba03a58598e057aca4466f4c98fcb538e2a7fa4415b527656",
+      "type": 2,
+      "accessList": [],
+      "blockHash": null,
+      "blockNumber": null,
+      "transactionIndex": null,
+      "confirmations": 0,
+      "from": "0x5596AaBC06A6bf4cB933C60211f66839EC8829a9",
+      "gasPrice": {
+        "type": "BigNumber",
+        "hex": "0x9502f910"
+      },
+      "maxPriorityFeePerGas": {
+        "type": "BigNumber",
+        "hex": "0x9502f900"
+      },
+      "maxFeePerGas": {
+        "type": "BigNumber",
+        "hex": "0x9502f910"
+      },
+      "gasLimit": {
+        "type": "BigNumber",
+        "hex": "0x076330"
+      },
+      "to": null,
+      "value": {
+        "type": "BigNumber",
+        "hex": "0x00"
+      },
+      "nonce": 1,
+      "data": "0x608060405234801561001057600080fd5b50600080546001600160a01b031916339081178255604051909182917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908290a350610759806100616000396000f3fe60806040526004361061007b5760003560e01c80639623609d1161004e5780639623609d1461011157806399a88ec414610124578063f2fde38b14610144578063f3b7dead146101645761007b565b8063204e1c7a14610080578063715018a6146100bc5780637eff275e146100d35780638da5cb5b146100f3575b600080fd5b34801561008c57600080fd5b506100a061009b366004610515565b610184565b6040516001600160a01b03909116815260200160405180910390f35b3480156100c857600080fd5b506100d1610215565b005b3480156100df57600080fd5b506100d16100ee366004610554565b610292565b3480156100ff57600080fd5b506000546001600160a01b03166100a0565b6100d161011f36600461058c565b61031c565b34801561013057600080fd5b506100d161013f366004610554565b6103ad565b34801561015057600080fd5b506100d161015f366004610515565b610405565b34801561017057600080fd5b506100a061017f366004610515565b6104ef565b6000806000836001600160a01b03166040516101aa90635c60da1b60e01b815260040190565b600060405180830381855afa9150503d80600081146101e5576040519150601f19603f3d011682016040523d82523d6000602084013e6101ea565b606091505b5091509150816101f957600080fd5b8080602001905181019061020d9190610538565b949350505050565b6000546001600160a01b031633146102485760405162461bcd60e51b815260040161023f906106c0565b60405180910390fd5b600080546040516001600160a01b03909116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a3600080546001600160a01b0319169055565b6000546001600160a01b031633146102bc5760405162461bcd60e51b815260040161023f906106c0565b6040516308f2839760e41b81526001600160a01b038281166004830152831690638f283970906024015b600060405180830381600087803b15801561030057600080fd5b505af1158015610314573d6000803e3d6000fd5b505050505050565b6000546001600160a01b031633146103465760405162461bcd60e51b815260040161023f906106c0565b60405163278f794360e11b81526001600160a01b03841690634f1ef286903490610376908690869060040161065d565b6000604051808303818588803b15801561038f57600080fd5b505af11580156103a3573d6000803e3d6000fd5b5050505050505050565b6000546001600160a01b031633146103d75760405162461bcd60e51b815260040161023f906106c0565b604051631b2ce7f360e11b81526001600160a01b038281166004830152831690633659cfe6906024016102e6565b6000546001600160a01b0316331461042f5760405162461bcd60e51b815260040161023f906106c0565b6001600160a01b0381166104945760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b606482015260840161023f565b600080546040516001600160a01b03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b6000806000836001600160a01b03166040516101aa906303e1469160e61b815260040190565b600060208284031215610526578081fd5b81356105318161070b565b9392505050565b600060208284031215610549578081fd5b81516105318161070b565b60008060408385031215610566578081fd5b82356105718161070b565b915060208301356105818161070b565b809150509250929050565b6000806000606084860312156105a0578081fd5b83356105ab8161070b565b925060208401356105bb8161070b565b9150604084013567ffffffffffffffff808211156105d7578283fd5b818601915086601f8301126105ea578283fd5b8135818111156105fc576105fc6106f5565b604051601f8201601f19908116603f01168101908382118183101715610624576106246106f5565b8160405282815289602084870101111561063c578586fd5b82602086016020830137856020848301015280955050505050509250925092565b600060018060a01b038416825260206040818401528351806040850152825b818110156106985785810183015185820160600152820161067c565b818111156106a95783606083870101525b50601f01601f191692909201606001949350505050565b6020808252818101527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604082015260600190565b634e487b7160e01b600052604160045260246000fd5b6001600160a01b038116811461072057600080fd5b5056fea2646970667358221220d849f96f3086b9f82cdcf665adb8c697ace05638da1c7c16ab2d26293717af6764736f6c63430008020033",
+      "r": "0x24e7a70dc37c92504437e7031728b339021909762ad5aa87aef0cfaa84b6c8d6",
+      "s": "0x7cbea387703860fb8c20a1ae816d42d644a9db97383aae20ff26b55bedc9318b",
+      "v": 0,
+      "creates": "0xaD16Ec89835a0ADd85752F90af68949aa898d506",
+      "chainId": 11155111
+    }
+  },
+  "proxies": [
+    {
+      "address": "0x427426C3A659bB9c19D003B0966C2831eF682B19",
+      "txHash": "0xbd11a711f16ac0ec4d66d512e1df74446d41a62a6d6093523e416c2dff04cd11",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x41feB0D97736AE2289b83286035C655a13ED45E8",
+      "txHash": "0x9e2574e3d2fdb335948ade468d074bd27013745d556c300aa653822bf51a4fac",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x2F865235f0EF8a0B10A1282CFD94AeA8e67b9EAf",
+      "txHash": "0x86b4b1b7d3b27417d7e5f696887cc75a9eff29bce0acb6e55d5ec69b9d88a892",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xb079A7Abb0a2CAE3c3c99A52d23B0A46E6AfF042",
+      "txHash": "0x803a733a9140949c585c61fb5f0cfacca00dfd5939393c1963af9af314c64bc5",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x9adA715DCc98940daD11D9BB33A4FC8BD94744Ab",
+      "txHash": "0x4acd5007a84cb4a8bd6f21fe5f522d9e6841ee2ad9c59effed4b13c2329292bb",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x2253b62BcCEF14A5ac14cF173b935fCDA83BB0d7",
+      "txHash": "0xb049c04fea2eff89dbe3f16b073d45e541e0a3197b6e3e92915198882837fb11",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x87Eb49dAC6df03C1DFd7380F37Ac711ba7d40B5F",
+      "txHash": "0xa864f892b118651e3af86d8cf442a1588e07dbe27059dfc6c7034a8ebbd4f3bd",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x172CA5152b2B7038A9500aBd1Ce8D93785e6806d",
+      "txHash": "0x3660faf4d11cf5676d5a982f1ad8e57412ccf31a938daaafc092c8ff86f39493",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xE9D36CB083fbAAe17A2563e8fb2052022568484B",
+      "txHash": "0xdc461fdb7688116459ea2fd7171a48c750262e07b8269b0bf52f93b0a64ec112",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x07AdBb1f66E827B5fB078A2b33f879c0A6A7F3dA",
+      "txHash": "0x80cfc3420e627549fa1b85ac7bd2992df53ff619509fcc49f76ef059b5e86cc3",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "f99e769e68117b0bd3b29794f14bd5c3773e364c2c2b40ddb65128953f32b351": {
+      "address": "0x8945DD55ED3961f1BF76FE92e4e0DEF5815d6A53",
+      "txHash": "0x97e72a0353c73e891975ee4749340a991728b89674f8a3e20e74d687145495e6",
+      "layout": {
+        "storage": [
+          {
+            "contract": "JIRA",
+            "label": "users",
+            "type": "t_mapping(t_string_memory_ptr,t_struct(User)51_storage)",
+            "src": "contracts\\JIRA.sol:42"
+          },
+          {
+            "contract": "JIRA",
+            "label": "sprints",
+            "type": "t_array(t_struct(Sprint)12_storage)dyn_storage",
+            "src": "contracts\\JIRA.sol:43"
+          },
+          {
+            "contract": "JIRA",
+            "label": "tickets",
+            "type": "t_array(t_struct(Ticket)38_storage)dyn_storage",
+            "src": "contracts\\JIRA.sol:44"
+          },
+          {
+            "contract": "JIRA",
+            "label": "userList",
+            "type": "t_array(t_string_storage)dyn_storage",
+            "src": "contracts\\JIRA.sol:45"
+          },
+          {
+            "contract": "JIRA",
+            "label": "manager",
+            "type": "t_address",
+            "src": "contracts\\JIRA.sol:46"
+          },
+          {
+            "contract": "JIRA",
+            "label": "project",
+            "type": "t_string_storage",
+            "src": "contracts\\JIRA.sol:47"
+          },
+          {
+            "contract": "JIRA",
+            "label": "confluence",
+            "type": "t_string_storage",
+            "src": "contracts\\JIRA.sol:48"
+          },
+          {
+            "contract": "JIRA",
+            "label": "activeSprintId",
+            "type": "t_uint256",
+            "src": "contracts\\JIRA.sol:49"
+          }
+        ],
+        "types": {
+          "t_mapping(t_string_memory_ptr,t_struct(User)51_storage)": {
+            "label": "mapping(string => struct JIRA.User)"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_struct(User)51_storage": {
+            "label": "struct JIRA.User",
+            "members": [
+              {
+                "label": "name",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "role",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "boardData",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "profileImg",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "abiLink",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "uid",
+                "type": "t_string_storage"
+              }
+            ]
+          },
+          "t_array(t_struct(Sprint)12_storage)dyn_storage": {
+            "label": "struct JIRA.Sprint[]"
+          },
+          "t_struct(Sprint)12_storage": {
+            "label": "struct JIRA.Sprint",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256"
+              },
+              {
+                "label": "name",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "startDate",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "enddate",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "abiLink",
+                "type": "t_string_storage"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_struct(Ticket)38_storage)dyn_storage": {
+            "label": "struct JIRA.Ticket[]"
+          },
+          "t_struct(Ticket)38_storage": {
+            "label": "struct JIRA.Ticket",
+            "members": [
+              {
+                "label": "index",
+                "type": "t_uint256"
+              },
+              {
+                "label": "sprintId",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "id",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "abiLink",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "repoter",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "owner",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "position",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "status",
+                "type": "t_bool"
+              },
+              {
+                "label": "tracking",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "comments",
+                "type": "t_string_storage"
+              }
+            ]
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]"
+          },
+          "t_address": {
+            "label": "address"
+          }
+        }
+      }
+    },
+    "64f8879194e21c09b9952a5a8e608d08f039ce6b065925b2e6f8e27f51db9924": {
+      "address": "0x506a6C890C40aE59DC24b679B34C6e93ebE914f7",
+      "txHash": "0x4534a5b26ae165baf35fa6be6c2b0981aefb47666cf50d576e83fb33cfa64ca0",
+      "layout": {
+        "storage": [
+          {
+            "contract": "JIRA",
+            "label": "nftTokenList",
+            "type": "t_array(t_uint256)dyn_storage",
+            "src": "contracts\\JIRA.sol:8"
+          },
+          {
+            "contract": "JIRA",
+            "label": "_tokenIds",
+            "type": "t_struct(Counter)5_storage",
+            "src": "contracts\\JIRA.sol:9"
+          },
+          {
+            "contract": "JIRA",
+            "label": "users",
+            "type": "t_mapping(t_string_memory_ptr,t_struct(User)136_storage)",
+            "src": "contracts\\JIRA.sol:46"
+          },
+          {
+            "contract": "JIRA",
+            "label": "sprints",
+            "type": "t_array(t_struct(Sprint)97_storage)dyn_storage",
+            "src": "contracts\\JIRA.sol:47"
+          },
+          {
+            "contract": "JIRA",
+            "label": "tickets",
+            "type": "t_array(t_struct(Ticket)123_storage)dyn_storage",
+            "src": "contracts\\JIRA.sol:48"
+          },
+          {
+            "contract": "JIRA",
+            "label": "userList",
+            "type": "t_array(t_string_storage)dyn_storage",
+            "src": "contracts\\JIRA.sol:49"
+          },
+          {
+            "contract": "JIRA",
+            "label": "manager",
+            "type": "t_address",
+            "src": "contracts\\JIRA.sol:50"
+          },
+          {
+            "contract": "JIRA",
+            "label": "project",
+            "type": "t_string_storage",
+            "src": "contracts\\JIRA.sol:51"
+          },
+          {
+            "contract": "JIRA",
+            "label": "confluence",
+            "type": "t_string_storage",
+            "src": "contracts\\JIRA.sol:52"
+          },
+          {
+            "contract": "JIRA",
+            "label": "activeSprintId",
+            "type": "t_uint256",
+            "src": "contracts\\JIRA.sol:53"
+          }
+        ],
+        "types": {
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_struct(Counter)5_storage": {
+            "label": "struct Counters.Counter",
+            "members": [
+              {
+                "label": "_value",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(User)136_storage)": {
+            "label": "mapping(string => struct JIRA.User)"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_struct(User)136_storage": {
+            "label": "struct JIRA.User",
+            "members": [
+              {
+                "label": "name",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "role",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "boardData",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "profileImg",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "abiLink",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "uid",
+                "type": "t_string_storage"
+              }
+            ]
+          },
+          "t_array(t_struct(Sprint)97_storage)dyn_storage": {
+            "label": "struct JIRA.Sprint[]"
+          },
+          "t_struct(Sprint)97_storage": {
+            "label": "struct JIRA.Sprint",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256"
+              },
+              {
+                "label": "name",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "startDate",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "enddate",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "abiLink",
+                "type": "t_string_storage"
+              }
+            ]
+          },
+          "t_array(t_struct(Ticket)123_storage)dyn_storage": {
+            "label": "struct JIRA.Ticket[]"
+          },
+          "t_struct(Ticket)123_storage": {
+            "label": "struct JIRA.Ticket",
+            "members": [
+              {
+                "label": "index",
+                "type": "t_uint256"
+              },
+              {
+                "label": "sprintId",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "id",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "abiLink",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "repoter",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "owner",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "position",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "status",
+                "type": "t_bool"
+              },
+              {
+                "label": "tracking",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "comments",
+                "type": "t_string_storage"
+              }
+            ]
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]"
+          },
+          "t_address": {
+            "label": "address"
+          }
+        }
+      }
+    },
+    "bf1234b7f155992d4c336086a5110f0e273a526ccd6788c28d7b9cdaa95de4d4": {
+      "address": "0x54Eaa3abC6dd9CeF0286e494B5628a6bDaBe0dAA",
+      "txHash": "0xa4f23849a9acc1c8ccc408567ecb1d1572abbf1a6da99773999ba54922738be9",
+      "layout": {
+        "storage": [
+          {
+            "contract": "JIRA",
+            "label": "nftTokenList",
+            "type": "t_array(t_uint256)dyn_storage",
+            "src": "contracts\\JIRA.sol:8"
+          },
+          {
+            "contract": "JIRA",
+            "label": "data",
+            "type": "t_mapping(t_uint256,t_struct(Data)7_storage)",
+            "src": "contracts\\JIRA.sol:18"
+          },
+          {
+            "contract": "JIRA",
+            "label": "manager",
+            "type": "t_address",
+            "src": "contracts\\JIRA.sol:20"
+          },
+          {
+            "contract": "JIRA",
+            "label": "project",
+            "type": "t_string_storage",
+            "src": "contracts\\JIRA.sol:21"
+          }
+        ],
+        "types": {
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_struct(Data)7_storage)": {
+            "label": "mapping(uint256 => struct JIRA.Data)"
+          },
+          "t_struct(Data)7_storage": {
+            "label": "struct JIRA.Data",
+            "members": [
+              {
+                "label": "value",
+                "type": "t_string_storage"
+              }
+            ]
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_address": {
+            "label": "address"
+          }
+        }
+      }
+    },
+    "13ebe594bd89893feba3b4586e20cfe027635079ab0dacf8e3a31735c74390ec": {
+      "address": "0x14297912c37a5f8D2A7435628a8C360257eC49aB",
+      "txHash": "0xa2212ec700bd7d50851ef67c84d5518aee9b8f22cf2891a135d18ab09f820099",
+      "layout": {
+        "storage": [
+          {
+            "contract": "JIRA",
+            "label": "nftTokenList",
+            "type": "t_array(t_uint256)dyn_storage",
+            "src": "contracts\\JIRA.sol:5"
+          },
+          {
+            "contract": "JIRA",
+            "label": "data",
+            "type": "t_mapping(t_uint256,t_struct(Data)7_storage)",
+            "src": "contracts\\JIRA.sol:11"
+          },
+          {
+            "contract": "JIRA",
+            "label": "manager",
+            "type": "t_address",
+            "src": "contracts\\JIRA.sol:13"
+          },
+          {
+            "contract": "JIRA",
+            "label": "project",
+            "type": "t_string_storage",
+            "src": "contracts\\JIRA.sol:14"
+          }
+        ],
+        "types": {
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_struct(Data)7_storage)": {
+            "label": "mapping(uint256 => struct JIRA.Data)"
+          },
+          "t_struct(Data)7_storage": {
+            "label": "struct JIRA.Data",
+            "members": [
+              {
+                "label": "value",
+                "type": "t_string_storage"
+              }
+            ]
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_address": {
+            "label": "address"
+          }
+        }
+      }
+    }
+  }
+}

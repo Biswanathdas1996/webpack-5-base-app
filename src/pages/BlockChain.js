@@ -15,7 +15,8 @@ function BlockChain() {
 
   async function fetchInfo() {
     try {
-      const getAllTokenInfo = await _fetch_with_wallet("tokenURI", 3);
+      const getAllTokenInfo = await _fetch_with_wallet("tokenURI", 1);
+      console.log("getAllTokenInfo--->", getAllTokenInfo);
       setData(getAllTokenInfo);
     } catch (err) {
       console.error("Unable to fetch data from IPFS", err);
@@ -24,11 +25,9 @@ function BlockChain() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    // Do something with the form data, such as sending it to a server
     console.log(formData);
     const transctionDatat = await _transction_with_wallet(
       "addData",
-      3,
       JSON.stringify(formData)
     );
     console.log("--transctionDatat->", transctionDatat);

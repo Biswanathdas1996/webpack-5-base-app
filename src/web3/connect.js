@@ -1,33 +1,24 @@
 import _ from "lodash";
 import Web3 from "web3";
-import ABI from "./ABI.json";
-import Address from "./Address";
+import AbiData from "./ABI/artifacts/contracts/JIRA.sol/JIRA.json";
+import Address from "./Address/Address.json";
 import { WEB3_PROVIDER_URL, WALLET_PRIVATE_KEY } from "../config";
+
+const ABI = AbiData?.abi;
 
 export const getcurrentNetworkId = async () => {
   const networkId = await web3?.eth?.accounts?._ethereumCall?.getNetworkId();
   return networkId;
 };
 
-export const getContractAddress = (networkID) => {
-  switch (networkID?.toString()) {
-    case "80001":
-      return Address.polygon;
-    case "5":
-      return Address.goerli;
-    case "4":
-      return Address.rinkeby;
-    case "14333":
-      return Address.pwcPrivetNetwork;
-    default:
-    // code block
-  }
+export const getContractAddress = () => {
+  return Address;
 };
 
 const getContract = async (web3) => {
   const networkId = await web3?.eth?.accounts?._ethereumCall?.getNetworkId();
   sessionStorage.setItem("currentyNetwork", networkId);
-  const ADDRESS = getContractAddress(networkId);
+  const ADDRESS = getContractAddress();
   const contract = ADDRESS && new web3.eth.Contract(ABI, ADDRESS);
   return contract;
 };
@@ -36,7 +27,7 @@ export const _transction_signed_with_provider = async (service, ...props) => {
   const web3 = new Web3(new Web3.providers.HttpProvider(WEB3_PROVIDER_URL));
 
   const signer = web3.eth.accounts.privateKeyToAccount(WALLET_PRIVATE_KEY);
-  const ADDRESS = getContractAddress(sessionStorage.getItem("currentyNetwork"));
+  const ADDRESS = getContractAddress();
 
   web3.eth.accounts.wallet.add(signer);
   const contract = new web3.eth.Contract(ABI, ADDRESS);

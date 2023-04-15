@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-const Address = require("../src/address/Address.json");
+const Address = require("../../src/web3/Address/Address.json");
 
 async function main() {
   const JIRAV2 = await ethers.getContractFactory("JIRAV2");

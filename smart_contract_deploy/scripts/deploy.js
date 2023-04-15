@@ -31,23 +31,3 @@ main()
     console.error(error);
     process.exit(1);
   });
-
-// const { ethers, upgrades } = require("hardhat");
-
-// async function main() {
-//   const JIRA = await ethers.getContractFactory("JIRA");
-//   const jira = await upgrades.deployProxy(JIRA, [], {
-//     initializer: "initialize",
-//   });
-
-//   await jira.deployed();
-
-//   console.log("JIRA deployed to:", jira.address);
-// }
-
-// main()
-//   .then(() => process.exit(0))
-//   .catch((error) => {
-//     console.error(error);
-//     process.exit(1);
-//   });

@@ -1,5 +1,5 @@
 // scripts/prepare_upgrade.js
-const proxyAddress = require("../src/address/Address.json");
+const proxyAddress = require("../../src/web3/Address/Address.json");
 async function main() {
   // const proxyAddress = "0x6BC0C2B913E73a73307B94ce272efa2bE97C3B3a";
 

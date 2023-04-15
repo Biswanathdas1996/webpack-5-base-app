@@ -26,6 +26,10 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
+        test: /\.(ts|tsx)$/,
+        loader: "ts-loader",
+      },
+      {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
@@ -38,6 +42,9 @@ module.exports = {
         ],
       },
     ],
+  },
+  resolve: {
+    extensions: ["*", ".js", ".jsx", ".ts", ".tsx"],
   },
   plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })],
 };

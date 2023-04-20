@@ -1,8 +1,7 @@
-import { CURRENT_LANGUAGE } from "../config";
 import _ from "lodash";
-import English from "../lang/english.json";
-import Bengali from "../lang/bengali.json";
-import Hindi from "../lang/hindi.json";
+import English from "../lang/English.json";
+import Bengali from "../lang/Bengali.json";
+import Hindi from "../lang/Hindi.json";
 
 export const add_lang = (LANGUAGE) => {
   switch (LANGUAGE) {
@@ -18,6 +17,7 @@ export const add_lang = (LANGUAGE) => {
 };
 
 export const site_text = (path) => {
+  const CURRENT_LANGUAGE = window.site_lang;
   const data = add_lang(CURRENT_LANGUAGE);
   return _.get(data, path);
 };

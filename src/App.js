@@ -15,11 +15,17 @@ function App() {
   window.site_text = site_text;
 
   React.useEffect(() => {
-    dispatch(updateLanguage("Engligh"));
+    const lang_value = localStorage.getItem("site-lang");
+    if (lang_value) {
+      dispatch(updateLanguage(lang_value));
+    } else {
+      dispatch(updateLanguage("Engligh"));
+    }
   }, []);
 
   const changeLang = (lang) => {
     dispatch(updateLanguage(lang));
+    localStorage.setItem("site-lang", lang);
   };
 
   return (

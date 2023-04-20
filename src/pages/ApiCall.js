@@ -39,16 +39,24 @@ function Users() {
       <h4>{window.site_text(`pages.ApiCall.sub_title`)}</h4>
       {users.loading && <p>{window.site_text(`pages.ApiCall.loading_text`)}</p>}
       {users.error && <p>{users.error}</p>}
-      <ul>
-        {users.data.map((user) => (
-          <li key={user.id}>
-            {user.name}{" "}
-            <button onClick={() => getSingleUser(user.id)}>
-              {window.site_text(`pages.ApiCall.view_button`)}
-            </button>
-          </li>
-        ))}
-      </ul>
+      <center>
+        <ul style={{ width: 400 }}>
+          {users.data.map((user) => (
+            <li
+              key={user.id}
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+              }}
+            >
+              {user.name}{" "}
+              <button onClick={() => getSingleUser(user.id)}>
+                {window.site_text(`pages.ApiCall.view_button`)}
+              </button>
+            </li>
+          ))}
+        </ul>
+      </center>
       <button onClick={fetchUsers}>
         {window.site_text(`pages.ApiCall.fetch_user_button`)}
       </button>

@@ -30,9 +30,11 @@ function App() {
 
   return (
     <>
-      <button onClick={() => changeLang("English")}>English</button>
-      <button onClick={() => changeLang("Hindi")}>Hindi</button>
-      <button onClick={() => changeLang("Bengali")}>Bengali</button>
+      <div>
+        <button onClick={() => changeLang("English")}>English</button>
+        <button onClick={() => changeLang("Hindi")}>Hindi</button>
+        <button onClick={() => changeLang("Bengali")}>Bengali</button>
+      </div>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/redux" element={<Redux />} />

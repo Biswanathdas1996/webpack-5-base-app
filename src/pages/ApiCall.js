@@ -35,11 +35,13 @@ function Users() {
 
   return (
     <div>
-      <h1>{window.site_text(`pages.ApiCall.title`)}</h1>
-      <h4>{window.site_text(`pages.ApiCall.sub_title`)}</h4>
-      {users.loading && <p>{window.site_text(`pages.ApiCall.loading_text`)}</p>}
-      {users.error && <p>{users.error}</p>}
       <center>
+        <h1>{window.site_text(`pages.ApiCall.title`)}</h1>
+        <h4>{window.site_text(`pages.ApiCall.sub_title`)}</h4>
+        {users.loading && (
+          <p>{window.site_text(`pages.ApiCall.loading_text`)}</p>
+        )}
+        {users.error && <p>{users.error}</p>}
         <ul style={{ width: 400 }}>
           {users.data.map((user) => (
             <li
@@ -56,10 +58,10 @@ function Users() {
             </li>
           ))}
         </ul>
+        <button onClick={fetchUsers}>
+          {window.site_text(`pages.ApiCall.fetch_user_button`)}
+        </button>
       </center>
-      <button onClick={fetchUsers}>
-        {window.site_text(`pages.ApiCall.fetch_user_button`)}
-      </button>
 
       {user && (
         <center>
